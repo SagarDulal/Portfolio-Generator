@@ -1,0 +1,30 @@
+<%- include("_header.ejs") -%>
+
+  <body class="home">
+    <%- include("_sidebar.ejs") -%>
+
+      <div class="container">
+        <!-- <h1>If completed projects please select in here.</h1> -->
+        <form action="projects" method='POST'>
+
+          <div class="form-group">
+            <label for="project">Project1</label>
+            <textarea type="text" class="form-control" id="project1" name="project1"
+              placeholder="Enter your project"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="bio">Project2</label>
+            <textarea type="text" class="form-control" id="project2" name="project2"
+              placeholder="Enter your project"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="otherwork">Other projects</label>
+            <textarea type="text" class="form-control" id="work3" name="project3"
+              placeholder="If any other project done describe here"></textarea>
+          </div>
+          <a href="/admin/skill"><button type="submit" class="btn btn-primary">Continue</button></a>
+
+        </form>
+      </div>

@@ -1,0 +1,32 @@
+<%- include("_header.ejs") -%>
+
+<body class="home">
+    <%- include("_sidebar.ejs") -%>
+                <!--  <div class="user-dashboard"> -->
+                    <div class="container">
+                        <!-- <h1>If previous work experience please mention.</h1> -->
+                        <form action="experiences" method='POST'>
+                            
+                                <div class="form-group">
+                                    <label for="bio">Work1</label>
+                                    <textarea type="text" class="form-control" id="work1" name = "work1" placeholder="Enter your work descirption here"></textarea>
+                              </div>
+                              
+                              <div class="form-group">
+                                <label for="bio">Work2</label>
+                                <textarea type="text" class="form-control" id="work2" name = "work2" placeholder="Enter your work descirption here" ></textarea>
+                          </div>
+                        
+                          <div class="form-group">
+                            <label for="otherwork">Other work</label>
+                            <textarea type="text" class="form-control" id="work3" name = "work3" placeholder="If for more work put infomation here" ></textarea>
+                      </div>
+                      <a href="/admin/project"><button type="submit" class="btn btn-primary">Continue</button></a>
+                              
+                           </form>
+
+                       </div>
+                    </div>
+</body>
+
+<html>

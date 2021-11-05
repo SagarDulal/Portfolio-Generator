@@ -1,0 +1,57 @@
+<%- include("_header.ejs") -%>
+
+    <body class="home">
+        <%- include("_sidebar.ejs") -%>
+
+            <!--  <div class="user-dashboard"> -->
+            <div class="container">
+                <!-- <h1>Fill out your Study section here </h1> -->
+                <form action="backgrounds" method="POST">
+
+
+                    <div class="form-group">
+                        <label for="studyfile">Your Current Education/ Last One</label>
+                        <input type="text" class="form-control" id="collegestudy" name="faculty"
+                            placeholder="Enter your study faculty ">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="college">University Name</label>
+                        <input type="text" class="form-control" id="college" name="universityName"
+                            placeholder="Enter your college name">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="studyfile">Post Graduate Education/ Last One</label>
+                        <input type="text" class="form-control" id="postgraduate" name="postgraduateEducation"
+                            placeholder="Enter your faculty">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="college">College Name</label>
+                        <input type="text" class="form-control" id="college" name="collegeName"
+                            placeholder="Enter your college name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="school">School Name</label>
+                        <input type="text" class="form-control" id="school" name="schoolName"
+                            placeholder="Enter your school name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bio">Other study</label>
+                        <textarea type="text" class="form-control" id="other" name="other"
+                            placeholder="Extra study course goes here if taken"></textarea>
+                    </div>
+                    <a href="/admin/experience"><button type="submit" class="btn btn-primary">Continue</button></a>
+                </form>
+
+            </div>
+
+    </body>
+
+    </html>
